@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary files
+*.local
+tmp/
+temp/
+
+# Uploads
+backend/uploads/
+
+# AI files
+.agents/
+.agent/
+_agents/
+_agent/
+SKILL.md
+
+# Junk files and temporary scripts
+*.zip
+_landing_page_*.jsx
+resolve_conflict.js
+trim.js
+push_each_file.js
+*.bat
+*.ps1
+backend/test_imports.js
+frontend/src/pages/tmp_copy.js
