@@ -1,0 +1,123 @@
+/* ── Resume Preview Container ─────────────────────────────── */
+.resume-preview-container {
+  scrollbar-width: thin;
+  scrollbar-color: #94a3b8 transparent;
+}
+
+.resume-preview-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.resume-preview-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.resume-preview-container::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+/* ── Resume HTML Content — Preserve Original Styles ──────── */
+
+/* Ensure nothing overflows */
+.resume-html-content * {
+  max-width: 100% !important;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+/* Headings — keep compact for resume context */
+.resume-html-content h1, 
+.resume-html-content h2, 
+.resume-html-content h3, 
+.resume-html-content h4, 
+.resume-html-content h5, 
+.resume-html-content h6 {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  line-height: 1.2;
+}
+
+/* Paragraphs — tight spacing for resume */
+.resume-html-content p {
+  margin-bottom: 0.3em;
+  margin-top: 0;
+}
+
+/* Tables — critical for 2-column resume layout preservation */
+.resume-html-content table {
+  width: 100% !important;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 0;
+}
+
+.resume-html-content td {
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+/* Ensure table cells don't collapse */
+.resume-html-content tr {
+  page-break-inside: avoid;
+}
+
+/* Links styling */
+.resume-html-content a {
+  color: #0563C1;
+  text-decoration: underline;
+}
+
+/* Lists — maintain compact layout */
+.resume-html-content ul,
+.resume-html-content ol {
+  margin-top: 0.2em;
+  margin-bottom: 0.3em;
+  padding-left: 1.5em;
+}
+
+.resume-html-content li {
+  margin-bottom: 0.15em;
+}
+
+/* Horizontal rules / dividers */
+.resume-html-content hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0.5em 0;
+}
+
+/* Ensure the wrapper div fills properly */
+.resume-html-content > div {
+  width: 100%;
+}
+
+/* Print-like page simulation — A4 proportions */
+.resume-html-content {
+  font-size: 10.5pt;
+  line-height: 1.35;
+  color: #000;
+  background: #fff;
+  -webkit-text-decoration-skip: none;
+}
+
+/* Kill browser spell-check red underlines */
+.resume-html-content,
+.resume-html-content * {
+  -webkit-spell-check: false;
+  text-decoration-skip-ink: auto;
+}
+
+.resume-preview-container [spellcheck="false"],
+.resume-preview-container [spellcheck="false"] * {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  -webkit-text-decorations-in-effect: none !important;
+}
+
+/* Override any red underline from spell check artifacts */
+.resume-html-content u {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
