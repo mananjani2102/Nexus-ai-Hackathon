@@ -1,28 +1,28 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=320&section=header&text=Nexus%20AI&fontSize=96&fontAlignY=38&animation=twinkling&fontColor=ffffff&desc=The+Resume+That+Gets+You+Hired+%E2%80%94+Built+by+AI&descAlignY=58&descSize=20&descColor=ffffff" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:34a85a,50:66d9ef,100:33cc33&height=320&section=header&text=Nexus%20AI&fontSize=96&fontAlignY=38&animation=twinkling&fontColor=ffffff&desc=The+Resume+That+Gets+You+Hired+--+Built+by+AI&descAlignY=58&descSize=20&descColor=ffffff" />
 
 <br>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2800&pause=900&color=7C3AED&center=true&vCenter=true&random=false&width=960&lines=Upload+PDF+or+DOCX.+Get+Scored+by+AI.+Download+in+Seconds.;ATS+Score+%7C+Keyword+Gap+%7C+Clarity+Score+%7C+STAR+Bullets;Live+Speech+Intelligence+%7C+Mock+Interview+%7C+Recruiter+Mode;Voice+Resume+Assistant+%7C+Resume+Battle+Mode;Groq+LLaMA+3.1+8B+Instant+%E2%80%94+Ultra+Fast+Inference;Your+Resume.+Supercharged.+Interview-Ready.)](https://github.com/mananjani2102)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2800&pause=900&color=34a85a&center=true&vCenter=true&random=false&width=960&lines=Upload+PDF+or+DOCX.+Get+Scored+by+AI.+Download+in+Seconds.;ATS+Score+%7C+Keyword+Gap+%7C+Clarity+Score+%7C+STAR+Bullets;Live+Speech+Intelligence+%7C+Mock+Interview+%7C+Recruiter+Mode;Voice+Resume+Assistant+%7C+Resume+Battle+Mode;Groq+LLaMA+3.1+8B+Instant+--+Ultra+Fast+Inference;Your+Resume.+Supercharged.+Interview-Ready.)](https://github.com/mananjani2102)
 
 <br>
 
 <p align="center">
   <a href="https://nexuss-ai.netlify.app/">
-    <img src="https://img.shields.io/badge/LIVE%20DEMO-VIEW%20PROJECT-7C3AED?style=for-the-badge&labelColor=0d0d0d" />
+    <img src="https://img.shields.io/badge/LIVE%20DEMO-VIEW%20PROJECT-34a85a?style=for-the-badge&labelColor=1a1d23" />
   </a>
   &nbsp;
-  <img src="https://img.shields.io/badge/STACK-React%20%2B%20Node.js-3B82F6?style=for-the-badge&labelColor=0d0d0d" />
+  <img src="https://img.shields.io/badge/STACK-React%20%2B%20Node.js-6495ed?style=for-the-badge&labelColor=1a1d23" />
   &nbsp;
-  <img src="https://img.shields.io/badge/AI-Groq%20LLaMA%203.1%208B-F59E0B?style=for-the-badge&labelColor=0d0d0d" />
+  <img src="https://img.shields.io/badge/AI-Groq%20LLaMA%203.1%208B-66d9ef?style=for-the-badge&labelColor=1a1d23" />
   &nbsp;
-  <img src="https://img.shields.io/badge/LICENSE-MIT-10B981?style=for-the-badge&labelColor=0d0d0d" />
+  <img src="https://img.shields.io/badge/LICENSE-MIT-33cc33?style=for-the-badge&labelColor=1a1d23" />
 </p>
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 
 </div>
 
@@ -75,15 +75,15 @@
 
 ### Nexus AI
 
-<img src="https://img.shields.io/badge/ATS%20%2B%20Clarity%20Score-7C3AED?style=flat-square" />
-<img src="https://img.shields.io/badge/Full%20AI%20Rewrite-3B82F6?style=flat-square" />
-<img src="https://img.shields.io/badge/Style%20%26%20Format%20Preserved-10B981?style=flat-square" />
-<img src="https://img.shields.io/badge/Resume--Tailored%20Interview-F59E0B?style=flat-square" />
-<img src="https://img.shields.io/badge/Live%20Speech%20Intelligence-EF4444?style=flat-square" />
-<img src="https://img.shields.io/badge/Recruiter%20Bulk%20Ranking-7C3AED?style=flat-square" />
-<img src="https://img.shields.io/badge/Download%20as%20DOCX-3B82F6?style=flat-square" />
-<img src="https://img.shields.io/badge/Voice%20Resume%20Assistant-10B981?style=flat-square" />
-<img src="https://img.shields.io/badge/Resume%20Battle%20Mode-EF4444?style=flat-square" />
+<img src="https://img.shields.io/badge/ATS%20%2B%20Clarity%20Score-34a85a?style=flat-square" />
+<img src="https://img.shields.io/badge/Full%20AI%20Rewrite-6495ed?style=flat-square" />
+<img src="https://img.shields.io/badge/Style%20%26%20Format%20Preserved-33cc33?style=flat-square" />
+<img src="https://img.shields.io/badge/Resume--Tailored%20Interview-66d9ef?style=flat-square" />
+<img src="https://img.shields.io/badge/Live%20Speech%20Intelligence-ef4444?style=flat-square" />
+<img src="https://img.shields.io/badge/Recruiter%20Bulk%20Ranking-34a85a?style=flat-square" />
+<img src="https://img.shields.io/badge/Download%20as%20DOCX-6495ed?style=flat-square" />
+<img src="https://img.shields.io/badge/Voice%20Resume%20Assistant-33cc33?style=flat-square" />
+<img src="https://img.shields.io/badge/Resume%20Battle%20Mode-ef4444?style=flat-square" />
 
 </td>
 </tr>
@@ -91,7 +91,7 @@
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 
 </div>
 
@@ -113,8 +113,8 @@
 ### Resume Analysis
 Score your resume across **ATS compatibility**, **clarity**, and **overall quality** in under 10 seconds. Paste the job description for deeper keyword matching.
 
-<img src="https://img.shields.io/badge/ATS%20Score-7C3AED?style=flat-square" />
-<img src="https://img.shields.io/badge/Clarity%20Score-3B82F6?style=flat-square" />
+<img src="https://img.shields.io/badge/ATS%20Score-34a85a?style=flat-square" />
+<img src="https://img.shields.io/badge/Clarity%20Score-6495ed?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -124,8 +124,8 @@ Score your resume across **ATS compatibility**, **clarity**, and **overall quali
 ### AI Full Rewrite
 Your resume fully rewritten with strong action verbs and quantified results. The original layout, fonts, and colors stay **100% untouched**. Download as real `.docx`.
 
-<img src="https://img.shields.io/badge/DOCX%20Preserved-10B981?style=flat-square" />
-<img src="https://img.shields.io/badge/PDF%20Supported-F59E0B?style=flat-square" />
+<img src="https://img.shields.io/badge/DOCX%20Preserved-33cc33?style=flat-square" />
+<img src="https://img.shields.io/badge/PDF%20Supported-66d9ef?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -135,8 +135,8 @@ Your resume fully rewritten with strong action verbs and quantified results. The
 ### Bullet Improver
 Paste any weak bullet point. Get a **STAR-method** impact statement back with Situation, Task, Action, and measurable Result.
 
-<img src="https://img.shields.io/badge/STAR%20Method-EF4444?style=flat-square" />
-<img src="https://img.shields.io/badge/Quantified%20Results-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/STAR%20Method-ef4444?style=flat-square" />
+<img src="https://img.shields.io/badge/Quantified%20Results-34a85a?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -146,8 +146,8 @@ Paste any weak bullet point. Get a **STAR-method** impact statement back with Si
 ### Interview Prep
 5 personalized interview questions generated directly from your resume's **strengths, gaps, and target role**. No generic questions.
 
-<img src="https://img.shields.io/badge/Role%20Tailored-3B82F6?style=flat-square" />
-<img src="https://img.shields.io/badge/Gap%20Based-10B981?style=flat-square" />
+<img src="https://img.shields.io/badge/Role%20Tailored-6495ed?style=flat-square" />
+<img src="https://img.shields.io/badge/Gap%20Based-33cc33?style=flat-square" />
 
 </td>
 </tr>
@@ -159,8 +159,8 @@ Paste any weak bullet point. Get a **STAR-method** impact statement back with Si
 ### ATS Keyword Gap
 Identifies the **exact keywords missing** from your resume relative to the target job role. Know precisely what recruiters' systems are filtering you out for.
 
-<img src="https://img.shields.io/badge/Job%20Matched-F59E0B?style=flat-square" />
-<img src="https://img.shields.io/badge/Role%20Specific-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Job%20Matched-66d9ef?style=flat-square" />
+<img src="https://img.shields.io/badge/Role%20Specific-34a85a?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -170,8 +170,8 @@ Identifies the **exact keywords missing** from your resume relative to the targe
 ### DOCX Download
 The AI-improved resume is available for **direct `.docx` download** — not a screenshot, not a PDF print, a real editable Word file with all your original formatting intact.
 
-<img src="https://img.shields.io/badge/Base64%20Export-3B82F6?style=flat-square" />
-<img src="https://img.shields.io/badge/Editable%20File-10B981?style=flat-square" />
+<img src="https://img.shields.io/badge/Base64%20Export-6495ed?style=flat-square" />
+<img src="https://img.shields.io/badge/Editable%20File-33cc33?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -181,8 +181,8 @@ The AI-improved resume is available for **direct `.docx` download** — not a sc
 ### STAR Bullets in Dashboard
 The dashboard shows **original vs AI-improved** bullet pairs side by side. See exactly what changed and copy the improved version instantly.
 
-<img src="https://img.shields.io/badge/Before%20%26%20After-EF4444?style=flat-square" />
-<img src="https://img.shields.io/badge/Copy%20Ready-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Before%20%26%20After-ef4444?style=flat-square" />
+<img src="https://img.shields.io/badge/Copy%20Ready-34a85a?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -192,8 +192,8 @@ The dashboard shows **original vs AI-improved** bullet pairs side by side. See e
 ### Secure Auth
 JWT-based login with bcrypt password hashing. Session persists with a **7-day token**. Register, login, and your analysis history is saved.
 
-<img src="https://img.shields.io/badge/JWT%20Auth-F59E0B?style=flat-square" />
-<img src="https://img.shields.io/badge/bcrypt%20Hashed-3B82F6?style=flat-square" />
+<img src="https://img.shields.io/badge/JWT%20Auth-66d9ef?style=flat-square" />
+<img src="https://img.shields.io/badge/bcrypt%20Hashed-6495ed?style=flat-square" />
 
 </td>
 </tr>
@@ -205,8 +205,8 @@ JWT-based login with bcrypt password hashing. Session persists with a **7-day to
 ### AI Mock Interview
 Practice with a live AI interviewer. **5 questions generated from your actual resume.** Answer by voice or type. Get scored on content + delivery after all 5 answers.
 
-<img src="https://img.shields.io/badge/Voice%20%2B%20Text-EF4444?style=flat-square" />
-<img src="https://img.shields.io/badge/AI%20Scored-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Voice%20%2B%20Text-ef4444?style=flat-square" />
+<img src="https://img.shields.io/badge/AI%20Scored-34a85a?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -214,10 +214,10 @@ Practice with a live AI interviewer. **5 questions generated from your actual re
 <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="90"/>
 
 ### Live Speech Intelligence
-While you speak, the browser tracks your **WPM pace**, **filler words** (um, uh, like...), and **confidence score** in real time — with zero server calls. No AI chatbot does this.
+While you speak, the browser tracks your **WPM pace**, **filler words** (um, uh, like...), and **confidence score** in real time -- with zero server calls. No AI chatbot does this.
 
-<img src="https://img.shields.io/badge/Zero%20Latency-10B981?style=flat-square" />
-<img src="https://img.shields.io/badge/Browser%20Native-3B82F6?style=flat-square" />
+<img src="https://img.shields.io/badge/Zero%20Latency-33cc33?style=flat-square" />
+<img src="https://img.shields.io/badge/Browser%20Native-6495ed?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -227,8 +227,8 @@ While you speak, the browser tracks your **WPM pace**, **filler words** (um, uh,
 ### Recruiter Mode
 Upload up to **20 resumes at once**. AI analyzes every candidate and ranks them from highest to lowest score. Built for recruiters and hiring managers.
 
-<img src="https://img.shields.io/badge/Bulk%20Upload-F59E0B?style=flat-square" />
-<img src="https://img.shields.io/badge/Auto%20Ranked-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Bulk%20Upload-66d9ef?style=flat-square" />
+<img src="https://img.shields.io/badge/Auto%20Ranked-34a85a?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -238,8 +238,8 @@ Upload up to **20 resumes at once**. AI analyzes every candidate and ranks them 
 ### Secure Auth
 JWT-based login with bcrypt password hashing. Session persists with a **7-day token**. Register, login, and your analysis history is saved.
 
-<img src="https://img.shields.io/badge/JWT%20Auth-F59E0B?style=flat-square" />
-<img src="https://img.shields.io/badge/bcrypt%20Hashed-3B82F6?style=flat-square" />
+<img src="https://img.shields.io/badge/JWT%20Auth-66d9ef?style=flat-square" />
+<img src="https://img.shields.io/badge/bcrypt%20Hashed-6495ed?style=flat-square" />
 
 </td>
 </tr>
@@ -251,8 +251,8 @@ JWT-based login with bcrypt password hashing. Session persists with a **7-day to
 ### Voice Resume Assistant
 Ask anything about your resume **by voice or text**. AI answers with specific, actionable advice based on your actual resume content and reads the response aloud automatically.
 
-<img src="https://img.shields.io/badge/Voice%20%2B%20Text-10B981?style=flat-square" />
-<img src="https://img.shields.io/badge/Resume%20Aware-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Voice%20%2B%20Text-33cc33?style=flat-square" />
+<img src="https://img.shields.io/badge/Resume%20Aware-34a85a?style=flat-square" />
 
 </td>
 <td align="center" width="25%">
@@ -262,8 +262,8 @@ Ask anything about your resume **by voice or text**. AI answers with specific, a
 ### Resume Battle Mode
 Upload **two resumes against one job description**. AI scores both head-to-head, declares a winner with keyword edge analysis, and gives a verdict per candidate. No other tool does this.
 
-<img src="https://img.shields.io/badge/Head%20to%20Head-EF4444?style=flat-square" />
-<img src="https://img.shields.io/badge/AI%20Verdict-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Head%20to%20Head-ef4444?style=flat-square" />
+<img src="https://img.shields.io/badge/AI%20Verdict-34a85a?style=flat-square" />
 
 </td>
 </tr>
@@ -273,10 +273,14 @@ Upload **two resumes against one job description**. AI scores both head-to-head,
 <br>
 
 <div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
+</div>
 
----
+<br>
 
-### Live Speech Intelligence — The Feature No AI Chatbot Has
+<div align="center">
+
+### Live Speech Intelligence -- The Feature No AI Chatbot Has
 
 </div>
 
@@ -295,10 +299,14 @@ Zero latency. Zero API calls. 100% browser-native — powered by the Web Speech 
 <br>
 
 <div align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
+</div>
 
----
+<br>
 
-### Resume Battle Mode — The Feature That Wins Hackathons
+<div align="center">
+
+### Resume Battle Mode -- The Feature That Wins Hackathons
 
 </div>
 
@@ -316,7 +324,7 @@ No other resume tool on the market does live head-to-head resume comparison.
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -342,37 +350,37 @@ No other resume tool on the market does live head-to-head resume comparison.
 <th align="left">What it does in Nexus AI</th>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/UI-7C3AED?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/UI-34a85a?style=flat-square" /></td>
 <td align="center"><strong>React 18 + Vite</strong></td>
 <td>Component-based UI with Vite's instant HMR and sub-second cold starts</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Routing-3B82F6?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Routing-6495ed?style=flat-square" /></td>
 <td align="center"><strong>React Router v6</strong></td>
 <td>Declarative client-side routing across 12 pages</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Animation-10B981?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Animation-33cc33?style=flat-square" /></td>
 <td align="center"><strong>Framer Motion</strong></td>
 <td>Page transitions, stagger reveals, and micro-interaction animations</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/HTTP-F59E0B?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/HTTP-66d9ef?style=flat-square" /></td>
 <td align="center"><strong>Axios</strong></td>
 <td>Centralized API client with 90s timeout for AI inference calls</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Auth-EF4444?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Auth-ef4444?style=flat-square" /></td>
 <td align="center"><strong>Firebase Auth</strong></td>
 <td>Optional social and email auth — config present, layered on top of JWT</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Styling-7C3AED?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Styling-34a85a?style=flat-square" /></td>
 <td align="center"><strong>Tailwind CSS</strong></td>
 <td>Utility-first styling with custom CSS variables for dark mode theming</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Speech-10B981?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Speech-33cc33?style=flat-square" /></td>
 <td align="center"><strong>Web Speech API</strong></td>
 <td>Browser-native voice input and speech synthesis — powers Voice Assistant and Live Speech Intelligence with zero server calls</td>
 </tr>
@@ -393,47 +401,47 @@ No other resume tool on the market does live head-to-head resume comparison.
 <th align="left">What it does in Nexus AI</th>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Server-7C3AED?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Server-34a85a?style=flat-square" /></td>
 <td align="center"><strong>Node.js + Express</strong></td>
 <td>REST API server running on port 4002 with global error handling</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Database-3B82F6?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Database-6495ed?style=flat-square" /></td>
 <td align="center"><strong>MongoDB + Mongoose</strong></td>
 <td>Stores users and analysis history with typed schemas and validation</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/AI-10B981?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/AI-33cc33?style=flat-square" /></td>
 <td align="center"><strong>Groq — LLaMA 3.1 8B Instant</strong></td>
 <td>Ultra-fast inference for scoring, rewriting, bullet improvement, interview questions, voice assistant, and battle mode</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Upload-F59E0B?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Upload-66d9ef?style=flat-square" /></td>
 <td align="center"><strong>Multer</strong></td>
 <td>In-memory file handling for PDF and DOCX resume uploads (max 5 MB)</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/PDF-EF4444?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/PDF-ef4444?style=flat-square" /></td>
 <td align="center"><strong>pdf-parse</strong></td>
 <td>Extracts raw text from uploaded PDF resumes for AI processing</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/DOCX-7C3AED?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/DOCX-34a85a?style=flat-square" /></td>
 <td align="center"><strong>Mammoth</strong></td>
 <td>Converts DOCX to plain text and fallback HTML for AI consumption</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/DOCX%20Style-3B82F6?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/DOCX%20Style-6495ed?style=flat-square" /></td>
 <td align="center"><strong>JSZip + xml2js</strong></td>
 <td>Custom parser that preserves fonts, colors, and layout during AI rewrite</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Security-10B981?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Security-33cc33?style=flat-square" /></td>
 <td align="center"><strong>bcryptjs + jsonwebtoken</strong></td>
 <td>Password hashing at cost 10 and 7-day signed JWT tokens</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/Config-F59E0B?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/Config-66d9ef?style=flat-square" /></td>
 <td align="center"><strong>dotenv</strong></td>
 <td>Loads environment variables from `.env` at server startup</td>
 </tr>
@@ -444,7 +452,7 @@ No other resume tool on the market does live head-to-head resume comparison.
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -454,7 +462,7 @@ No other resume tool on the market does live head-to-head resume comparison.
 ## AI Pipeline
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#7C3AED','primaryTextColor':'#ffffff','primaryBorderColor':'#7C3AED','lineColor':'#3B82F6','secondaryColor':'#10B981','tertiaryColor':'#F59E0B','background':'#0d0d0d'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#34a85a','primaryTextColor':'#ffffff','primaryBorderColor':'#34a85a','lineColor':'#6495ed','secondaryColor':'#33cc33','tertiaryColor':'#66d9ef','background':'#1a1d23'}}}%%
 flowchart LR
     A([Upload\nPDF or DOCX]) -->|Extract Text| B([Groq\nLLaMA 3.1 8B])
     B --> C([Score\nATS + Clarity])
@@ -466,28 +474,28 @@ flowchart LR
     Z --> VA([Voice Assistant\nQ&A Loop])
     Z --> BM([Battle Mode\nHead-to-Head])
 
-    style A fill:#7C3AED,stroke:#7C3AED,color:#fff
-    style B fill:#3B82F6,stroke:#3B82F6,color:#fff
-    style C fill:#10B981,stroke:#10B981,color:#fff
-    style D fill:#F59E0B,stroke:#F59E0B,color:#fff
-    style E fill:#EF4444,stroke:#EF4444,color:#fff
-    style G fill:#10B981,stroke:#10B981,color:#fff
-    style I fill:#7C3AED,stroke:#7C3AED,color:#fff
-    style Z fill:#3B82F6,stroke:#3B82F6,color:#fff
-    style VA fill:#10B981,stroke:#10B981,color:#fff
-    style BM fill:#EF4444,stroke:#EF4444,color:#fff
+    style A fill:#34a85a,stroke:#34a85a,color:#fff
+    style B fill:#6495ed,stroke:#6495ed,color:#fff
+    style C fill:#33cc33,stroke:#33cc33,color:#fff
+    style D fill:#66d9ef,stroke:#66d9ef,color:#000
+    style E fill:#ef4444,stroke:#ef4444,color:#fff
+    style G fill:#33cc33,stroke:#33cc33,color:#fff
+    style I fill:#34a85a,stroke:#34a85a,color:#fff
+    style Z fill:#6495ed,stroke:#6495ed,color:#fff
+    style VA fill:#33cc33,stroke:#33cc33,color:#fff
+    style BM fill:#ef4444,stroke:#ef4444,color:#fff
 ```
 
 <br>
 
 <table>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/STEP%201-Upload%20Resume-7C3AED?style=for-the-badge&labelColor=0d0d0d" /></td>
-<td align="center"><img src="https://img.shields.io/badge/STEP%202-AI%20Scores%20%26%20Identifies%20Gaps-3B82F6?style=for-the-badge&labelColor=0d0d0d" /></td>
+<td align="center"><img src="https://img.shields.io/badge/STEP%201-Upload%20Resume-34a85a?style=for-the-badge&labelColor=1a1d23" /></td>
+<td align="center"><img src="https://img.shields.io/badge/STEP%202-AI%20Scores%20%26%20Identifies%20Gaps-6495ed?style=for-the-badge&labelColor=1a1d23" /></td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/STEP%203-Rewrite%20%26%20Download-10B981?style=for-the-badge&labelColor=0d0d0d" /></td>
-<td align="center"><img src="https://img.shields.io/badge/STEP%204-Voice%20Assistant%20%26%20Battle-EF4444?style=for-the-badge&labelColor=0d0d0d" /></td>
+<td align="center"><img src="https://img.shields.io/badge/STEP%203-Rewrite%20%26%20Download-33cc33?style=for-the-badge&labelColor=1a1d23" /></td>
+<td align="center"><img src="https://img.shields.io/badge/STEP%204-Voice%20Assistant%20%26%20Battle-ef4444?style=for-the-badge&labelColor=1a1d23" /></td>
 </tr>
 </table>
 
@@ -496,7 +504,7 @@ flowchart LR
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -578,7 +586,7 @@ nexus-ai/
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -629,10 +637,10 @@ nexus-ai/
 
 ### Prerequisites
 
-<img src="https://img.shields.io/badge/Node.js-v18%2B-339933?style=flat-square&logo=nodedotjs&logoColor=white&labelColor=0d0d0d" />
-<img src="https://img.shields.io/badge/npm-v9%2B-CB3837?style=flat-square&logo=npm&logoColor=white&labelColor=0d0d0d" />
-<img src="https://img.shields.io/badge/MongoDB-Atlas%20or%20Local-47A248?style=flat-square&logo=mongodb&logoColor=white&labelColor=0d0d0d" />
-<img src="https://img.shields.io/badge/Groq-API%20Key%20Required-F55036?style=flat-square&logoColor=white&labelColor=0d0d0d" />
+<img src="https://img.shields.io/badge/Node.js-v18%2B-339933?style=flat-square&logo=nodedotjs&logoColor=white&labelColor=1a1d23" />
+<img src="https://img.shields.io/badge/npm-v9%2B-CB3837?style=flat-square&logo=npm&logoColor=white&labelColor=1a1d23" />
+<img src="https://img.shields.io/badge/MongoDB-Atlas%20or%20Local-47A248?style=flat-square&logo=mongodb&logoColor=white&labelColor=1a1d23" />
+<img src="https://img.shields.io/badge/Groq-API%20Key%20Required-F55036?style=flat-square&logoColor=white&labelColor=1a1d23" />
 
 ### 1 — Clone
 
@@ -679,7 +687,7 @@ VITE_FIREBASE_APP_ID=
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -720,7 +728,7 @@ VITE_FIREBASE_APP_ID=
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -729,7 +737,7 @@ VITE_FIREBASE_APP_ID=
 
 ## API Reference
 
-<img src="https://img.shields.io/badge/Base%20URL-https://nexus--ai-3o4n.onrender.com/api-7C3AED?style=for-the-badge&labelColor=0d0d0d" />
+<img src="https://img.shields.io/badge/Base%20URL-https://nexus--ai-3o4n.onrender.com/api-34a85a?style=for-the-badge&labelColor=1a1d23" />
 
 <br><br>
 
@@ -871,7 +879,7 @@ VITE_FIREBASE_APP_ID=
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -899,7 +907,7 @@ Every AI route has its own `try/catch` with a hardcoded safe fallback — if Gro
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -908,11 +916,11 @@ Every AI route has its own `try/catch` with a hardcoded safe fallback — if Gro
 
 ## Deployment
 
-<img src="https://img.shields.io/badge/Backend-Render-7C3AED?style=for-the-badge&logo=render&logoColor=white&labelColor=0d0d0d" />
+<img src="https://img.shields.io/badge/Backend-Render-34a85a?style=for-the-badge&logo=render&logoColor=white&labelColor=1a1d23" />
 &nbsp;
-<img src="https://img.shields.io/badge/Frontend-Netlify-3B82F6?style=for-the-badge&logo=netlify&logoColor=white&labelColor=0d0d0d" />
+<img src="https://img.shields.io/badge/Frontend-Netlify-6495ed?style=for-the-badge&logo=netlify&logoColor=white&labelColor=1a1d23" />
 &nbsp;
-<img src="https://img.shields.io/badge/Database-MongoDB%20Atlas-10B981?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=0d0d0d" />
+<img src="https://img.shields.io/badge/Database-MongoDB%20Atlas-33cc33?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=1a1d23" />
 
 </div>
 
@@ -939,7 +947,7 @@ Every AI route has its own `try/catch` with a hardcoded safe fallback — if Gro
 <br>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 </div>
 
 <br>
@@ -960,7 +968,7 @@ Every AI route has its own `try/catch` with a hardcoded safe fallback — if Gro
 <td>Replace in-memory store with AWS S3 / Cloudinary for cross-restart persistence</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/HIGH-EF4444?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/HIGH-ef4444?style=flat-square" /></td>
 <td><strong>User-linked History</strong></td>
 <td>Tie every analysis record to the authenticated user's account in MongoDB</td>
 </tr>
@@ -970,7 +978,7 @@ Every AI route has its own `try/catch` with a hardcoded safe fallback — if Gro
 <td>Per-IP throttling via <code>express-rate-limit</code> to protect AI endpoints</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/MED-F59E0B?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/MED-66d9ef?style=flat-square" /></td>
 <td><strong>Cover Letter Generator</strong></td>
 <td>AI-generated cover letter from resume content + job description</td>
 </tr>
@@ -985,7 +993,7 @@ Every AI route has its own `try/catch` with a hardcoded safe fallback — if Gro
 <td>Export the AI-improved resume directly as a formatted PDF</td>
 </tr>
 <tr>
-<td align="center"><img src="https://img.shields.io/badge/LOW-3B82F6?style=flat-square" /></td>
+<td align="center"><img src="https://img.shields.io/badge/LOW-6495ed?style=flat-square" /></td>
 <td><strong>Multi-language Support</strong></td>
 <td>Detect resume language and run analysis in the same language</td>
 </tr>
@@ -1014,7 +1022,7 @@ This project is licensed under the [MIT License](LICENSE). Use it, fork it, ship
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=4&width=900&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:34a85a,50:66d9ef,100:33cc33&height=4&width=900&section=header" width="100%">
 
 <br>
 
@@ -1031,7 +1039,7 @@ This project is licensed under the [MIT License](LICENSE). Use it, fork it, ship
 <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="80"/>
 
 ### Manan Jani
-<img src="https://img.shields.io/badge/Role-Frontend-7C3AED?style=for-the-badge&labelColor=0d0d0d" />
+<img src="https://img.shields.io/badge/Role-Frontend-34a85a?style=for-the-badge&labelColor=1a1d23" />
 
 *React · Vite · UI/UX · Firebase Auth*
 
@@ -1041,7 +1049,7 @@ This project is licensed under the [MIT License](LICENSE). Use it, fork it, ship
 <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="80"/>
 
 ### Aman
-<img src="https://img.shields.io/badge/Role-Backend-3B82F6?style=for-the-badge&labelColor=0d0d0d" />
+<img src="https://img.shields.io/badge/Role-Backend-6495ed?style=for-the-badge&labelColor=1a1d23" />
 
 *Node.js · Express · MongoDB · AI Pipeline*
 
@@ -1051,10 +1059,10 @@ This project is licensed under the [MIT License](LICENSE). Use it, fork it, ship
 
 <br>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=2500&pause=1000&color=EF4444&center=true&vCenter=true&random=false&width=720&lines=If+your+resume+still+gets+rejected+after+Nexus+AI...;...with+all+due+respect%2C+that's+entirely+a+skill+issue.)](https://github.com/mananjani2102)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=2500&pause=1000&color=33cc33&center=true&vCenter=true&random=false&width=720&lines=If+your+resume+still+gets+rejected+after+Nexus+AI...;...with+all+due+respect%2C+that's+entirely+a+skill+issue.)](https://github.com/mananjani2102)
 
 <br><br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=footer&text=Go%20Get%20That%20Offer&fontSize=42&fontAlignY=70&animation=twinkling&fontColor=ffffff" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:33cc33,50:66d9ef,100:34a85a&height=200&section=footer&text=Go%20Get%20That%20Offer&fontSize=42&fontAlignY=70&animation=twinkling&fontColor=ffffff" />
 
 </div>
