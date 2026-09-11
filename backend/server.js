@@ -12,6 +12,14 @@ app.use(cors({ origin: true, credentials: true }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
+// Rate limiter middleware for AI-intensive endpoints
+const { createRateLimiter } = require('./middleware/rateLimiter');
+const aiLimiter = createRateLimiter({
+  windowMs: 60 * 1000,
+  maxRequests: 30,
+  message: 'AI request limit reached for this minute. Please wait a moment before sending another request.',
+});
+
 // Routes
 const authRoutes     = require('./routes/auth');
 const analyzeRoutes  = require('./routes/analyze');
@@ -25,13 +33,13 @@ const voiceAssistantRoutes = require('./routes/voiceAssistant');
 const battleRoutes = require('./routes/battle');
 
 app.use('/api/auth',               authRoutes);
-app.use('/api',                    analyzeRoutes);
+app.use('/api',                    aiLimiter, analyzeRoutes);
 app.use('/api',                    bulletRoutes);
 app.use('/api',                    interviewRoutes);
-app.use('/api',                    rewriteRoutes);
+app.use('/api',                    aiLimiter, rewriteRoutes);
 app.use('/api',                    historyRoutes);
 app.use('/api/recruiter',          recruiterRoutes);
-app.use('/api/mock-interview',     mockInterviewRoutes);
+app.use('/api/mock-interview',     aiLimiter, mockInterviewRoutes);
 app.use('/api/voice-assistant',    voiceAssistantRoutes);
 app.use('/api',                    battleRoutes);
 
