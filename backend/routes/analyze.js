@@ -64,17 +64,18 @@ Return ONLY a valid JSON object with exactly these keys:
   "star_bullets": object with 3 original:improved pairs
 }`;
 
-    const OpenAI = require('openai');
-    const openai = new OpenAI({
-      baseURL: "https://api.groq.com/openai/v1",
-      apiKey: process.env.GROQ_API_KEY,
-    });
-    
-    const response = await openai.chat.completions.create({
-      model: "llama-3.1-8b-instant",
-      messages: [{ role: "user", content: prompt }]
-    });
-    const raw = response.choices[0].message.content;
+    const { generateAIResponse } = require('../utils/aiClient');
+    let raw = '';
+    try {
+      raw = await generateAIResponse({
+        prompt,
+        systemPrompt: 'You are an expert ATS resume analyzer and career coach. Always output valid JSON only.',
+        model: 'llama-3.1-8b-instant',
+      });
+    } catch (apiErr) {
+      console.warn('AI pipeline unavailable, engaging resilient fallback heuristic:', apiErr.message);
+    }
+
     let result;
     try {
       const jsonMatch = raw.match(/\{[\s\S]*\}/);

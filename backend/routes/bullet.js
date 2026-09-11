@@ -24,17 +24,17 @@ Return ONLY a valid JSON object (no markdown, no extra text):
   }
 }`;
 
-    const OpenAI = require('openai');
-    const openai = new OpenAI({
-      baseURL: "https://api.groq.com/openai/v1",
-      apiKey: process.env.GROQ_API_KEY,
-    });
-    
-    const response = await openai.chat.completions.create({
-      model: "llama-3.1-8b-instant",
-      messages: [{ role: "user", content: prompt }]
-    });
-    const raw = response.choices[0].message.content;
+    const { generateAIResponse } = require('../utils/aiClient');
+    let raw = '';
+    try {
+      raw = await generateAIResponse({
+        prompt,
+        systemPrompt: 'You are a professional resume writer. Return ONLY a valid JSON object.',
+        model: 'llama-3.1-8b-instant',
+      });
+    } catch (apiErr) {
+      console.warn('AI pipeline unavailable for bullet improver, using fallback:', apiErr.message);
+    }
 
     let result;
     try {
