@@ -1,10 +1,54 @@
 import axios from "axios";
+
 const api = axios.create({
   baseURL: import.meta.env.DEV 
     ? "http://localhost:4002/api" 
     : (import.meta.env.VITE_API_URL || "https://nexus-ai-3o4n.onrender.com/api"),
   timeout: 90000,
 });
+
+// Request interceptor: inject auth token if stored locally
+api.interceptors.request.use(
+  (config) => {
+    const token = localStorage.getItem("token") || localStorage.getItem("nexus_token");
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
+
+// Response interceptor: retry transient 429/503 errors with exponential backoff
+api.interceptors.response.use(
+  (response) => response,
+  async (error) => {
+    const config = error.config;
+    if (!config) return Promise.reject(error);
+
+    config.__retryCount = config.__retryCount || 0;
+    const isTransient = error.response && (error.response.status === 429 || error.response.status === 503);
+
+    if (isTransient && config.__retryCount < 2) {
+      config.__retryCount += 1;
+      const retryAfter = parseInt(error.response?.headers?.["retry-after"], 10);
+      const delay = !isNaN(retryAfter) && retryAfter > 0 
+        ? retryAfter * 1000 
+        : Math.pow(2, config.__retryCount) * 1000;
+
+      await new Promise((resolve) => setTimeout(resolve, delay));
+      return api(config);
+    }
+
+    const enhancedMessage =
+      error.response?.data?.error ||
+      error.response?.data?.message ||
+      error.message ||
+      "An unexpected network error occurred";
+    error.userMessage = enhancedMessage;
+    return Promise.reject(error);
+  }
+);
 export const analyzeResume = async (file, jobRole, jdText) => {
   const formData = new FormData();
   formData.append("resume", file);
