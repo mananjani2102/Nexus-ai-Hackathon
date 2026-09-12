@@ -11,6 +11,7 @@ import {
   ChevronRight,
   ArrowRight,
   Sparkles,
+  Search,
 } from "lucide-react";
 import PageWrapper from "../components/PageWrapper";
 import { useResume } from "../context/ResumeContext";
@@ -135,6 +136,9 @@ export default function SuggestionsPage() {
   const navigate = useNavigate();
   const { analysisResult, jobRole } = useResume();
   const [filter, setFilter] = useState("all");
+  const [typeFilter, setTypeFilter] = useState("all");
+  const [searchQuery, setSearchQuery] = useState("");
+
   if (!analysisResult) {
     return (
       <PageWrapper>
@@ -149,15 +153,24 @@ export default function SuggestionsPage() {
       </PageWrapper>
     );
   }
+
   const suggestions = buildSuggestions(analysisResult);
-  const filtered =
-    filter === "all"
-      ? suggestions
-      : suggestions.filter((s) => s.priority === filter);
+  const filtered = suggestions.filter((s) => {
+    const matchesPriority = filter === "all" || s.priority === filter;
+    const matchesType = typeFilter === "all" || s.type === typeFilter;
+    const matchesSearch =
+      !searchQuery.trim() ||
+      s.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      s.detail.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      s.action.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesPriority && matchesType && matchesSearch;
+  });
+
   const counts = suggestions.reduce(
     (a, s) => ({ ...a, [s.priority]: (a[s.priority] || 0) + 1 }),
     {},
   );
+
   return (
     <PageWrapper>
       <motion.div
@@ -183,32 +196,72 @@ export default function SuggestionsPage() {
           </Link>
         </div>
       </motion.div>
+
+      {/* Search and Filters */}
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="flex flex-wrap gap-2 mb-6"
+        className="space-y-3 mb-6"
       >
-        {[
-          { key: "all", label: `All (${suggestions.length})` },
-          { key: "critical", label: `🔴 Critical (${counts.critical || 0})` },
-          { key: "high", label: `🟠 High (${counts.high || 0})` },
-          { key: "medium", label: `🔵 Medium (${counts.medium || 0})` },
-        ].map(({ key, label }) => (
-          <button
-            key={key}
-            onClick={() => setFilter(key)}
-            className={`px-4 py-1.5 rounded-lg text-xs font-semibold border transition-all shadow-sm
-              ${
-                filter === key
-                  ? "bg-primary/10 border-primary/30 text-primary"
-                  : "bg-card/40 border-border text-muted-foreground hover:border-primary/30 hover:text-foreground"
-              }`}
-          >
-            {label}
-          </button>
-        ))}
+        {/* Search Bar */}
+        <div className="relative max-w-md">
+          <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search suggestions, keywords, or metrics..."
+            className="w-full pl-9 pr-4 py-2 text-xs rounded-xl bg-card/40 border border-border focus:border-primary/50 focus:outline-none transition-colors"
+          />
+        </div>
+
+        {/* Priority and Category Filter Pills */}
+        <div className="flex flex-wrap items-center gap-2">
+          {[
+            { key: "all", label: `All (${suggestions.length})` },
+            { key: "critical", label: `🔴 Critical (${counts.critical || 0})` },
+            { key: "high", label: `🟠 High (${counts.high || 0})` },
+            { key: "medium", label: `🔵 Medium (${counts.medium || 0})` },
+          ].map(({ key, label }) => (
+            <button
+              key={key}
+              onClick={() => setFilter(key)}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold border transition-all shadow-sm
+                ${
+                  filter === key
+                    ? "bg-primary/15 border-primary/40 text-primary"
+                    : "bg-card/40 border-border text-muted-foreground hover:border-primary/30 hover:text-foreground"
+                }`}
+            >
+              {label}
+            </button>
+          ))}
+
+          <div className="h-4 w-px bg-border mx-1 hidden sm:block" />
+
+          {[
+            { key: "all", label: "All Categories" },
+            { key: "keywords", label: "Keywords" },
+            { key: "impact", label: "Impact" },
+            { key: "formatting", label: "Formatting" },
+          ].map(({ key, label }) => (
+            <button
+              key={key}
+              onClick={() => setTypeFilter(key)}
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition-all
+                ${
+                  typeFilter === key
+                    ? "bg-indigo-500/15 border-indigo-500/40 text-indigo-400"
+                    : "bg-transparent border-transparent text-muted-foreground hover:text-foreground"
+                }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
       </motion.div>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
