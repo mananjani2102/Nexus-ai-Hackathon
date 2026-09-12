@@ -79,6 +79,8 @@ export default function DashboardPage() {
   const [changes, setChanges] = useState([]);
   const [showChanges, setShowChanges] = useState(false);
   const [isCoverLetterOpen, setIsCoverLetterOpen] = useState(false);
+  const [expandedQ, setExpandedQ] = useState(null);
+  const [copiedQIdx, setCopiedQIdx] = useState(null);
 
   if (!analysisResult) {
     return (
@@ -99,6 +101,8 @@ export default function DashboardPage() {
     overall_score = 72,
     ats_score = 68,
     clarity_score = 81,
+    impact_score = analysisResult?.impact_score || Math.round((analysisResult?.overall_score || 72) * 0.95),
+    format_score = analysisResult?.format_score || Math.round((analysisResult?.clarity_score || 81) * 1.02),
     strengths = [],
     weaknesses = [],
     ats_keywords_missing = [],
@@ -109,18 +113,38 @@ export default function DashboardPage() {
     setLoadingQ(true);
     try {
       const result = await generateInterviewQuestions({ jobRole, strengths, weaknesses, ats_keywords_missing });
-      if (result && result.questions) {
-        setQuestions(result.questions);
+      if (result && (result.detailedQuestions || result.questions)) {
+        setQuestions(result.detailedQuestions || result.questions);
       } else {
         throw new Error("Invalid response");
       }
     } catch (err) {
       setQuestions([
-        `Could you elaborate on your experience as a ${jobRole || 'professional'}?`,
-        "Based on your resume, what do you consider your greatest strength?",
-        "Can you share an example of a difficult challenge you overcame in a previous role?",
-        "Can you describe your ideal team environment?",
-        "Where do you see your career heading in the next 3 to 5 years?",
+        {
+          question: `Could you elaborate on your experience as a ${jobRole || 'professional'}?`,
+          category: 'Technical',
+          coachingTip: 'Highlight real-world architecture choices and specific quantifiable metrics.',
+        },
+        {
+          question: 'Based on your resume, what do you consider your greatest strength?',
+          category: 'Behavioral (STAR)',
+          coachingTip: 'Use a concrete scenario where your strength prevented or solved a problem.',
+        },
+        {
+          question: 'Can you share an example of a difficult challenge you overcame in a previous role?',
+          category: 'Situational',
+          coachingTip: 'Walk through the obstacle, your analytical thinking, and the positive outcome.',
+        },
+        {
+          question: 'Can you describe your ideal team environment?',
+          category: 'Behavioral (STAR)',
+          coachingTip: 'Focus on communication, high code standards, and positive collaboration.',
+        },
+        {
+          question: 'Where do you see your career heading in the next 3 to 5 years?',
+          category: 'Leadership',
+          coachingTip: 'Demonstrate ambition aligned with mastering technical execution and leadership.',
+        },
       ]);
     } finally {
       setLoadingQ(false);
@@ -349,19 +373,20 @@ ${rewritten}
               thickness={10}
             />
           </div>
-          <div className="mt-6 pt-5 border-t border-white/5 grid grid-cols-3 gap-3 text-center">
+          <div className="mt-6 pt-5 border-t border-white/5 grid grid-cols-4 gap-2 text-center">
             {[
               {
-                label: "Overall Score",
+                label: "Overall",
                 val: overall_score,
                 color: "text-emerald-400",
               },
               { label: "ATS Match", val: ats_score, color: "text-indigo-400" },
               { label: "Clarity", val: clarity_score, color: "text-cyan-400" },
+              { label: "Impact", val: impact_score, color: "text-amber-400" },
             ].map(({ label, val, color }) => (
               <div key={label}>
                 <div className={`text-xl font-black ${color}`}>{val}</div>
-                <div className="text-xs text-nexus-muted mt-0.5">{label}</div>
+                <div className="text-[11px] text-nexus-muted mt-0.5">{label}</div>
               </div>
             ))}
           </div>
@@ -515,20 +540,74 @@ ${rewritten}
           {!loadingQ && questions.length > 0 && (
             <div className="flex flex-col h-full">
               <div className="space-y-2 mb-3">
-                {questions.map((q, idx) => (
-                  <div key={idx} className="flex gap-3 p-3 rounded-xl bg-card/50 border border-border">
-                    <div className="w-6 h-6 rounded-full bg-primary/15 text-primary text-xs font-mono flex items-center justify-center shrink-0">
-                      {idx + 1}
+                {questions.map((item, idx) => {
+                  const qText = typeof item === 'string' ? item : item.question;
+                  const qCategory = typeof item === 'object' ? item.category : null;
+                  const qTip = typeof item === 'object' ? item.coachingTip : null;
+                  const isExpanded = expandedQ === idx;
+                  const isCopied = copiedQIdx === idx;
+
+                  return (
+                    <div
+                      key={idx}
+                      className="p-3 rounded-xl bg-card/50 border border-border transition-all hover:border-primary/30"
+                    >
+                      <div className="flex items-start gap-3">
+                        <div className="w-6 h-6 rounded-full bg-primary/15 text-primary text-xs font-mono flex items-center justify-center shrink-0 mt-0.5">
+                          {idx + 1}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          {qCategory && (
+                            <span className="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-indigo-500/15 text-indigo-400 border border-indigo-500/20 mb-1.5">
+                              {qCategory}
+                            </span>
+                          )}
+                          <p className="text-xs text-foreground leading-snug">{qText}</p>
+                          {qTip && isExpanded && (
+                            <div className="mt-2.5 p-2.5 rounded-lg bg-primary/5 border border-primary/15 text-[11px] text-muted-foreground leading-relaxed">
+                              <span className="font-semibold text-primary">Coaching Tip: </span>
+                              {qTip}
+                            </div>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-1 shrink-0">
+                          {qTip && (
+                            <button
+                              type="button"
+                              onClick={() => setExpandedQ(isExpanded ? null : idx)}
+                              className="p-1 rounded text-muted-foreground hover:text-foreground transition-colors"
+                              title={isExpanded ? "Hide coaching tip" : "Show coaching tip"}
+                            >
+                              {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                            </button>
+                          )}
+                          <button
+                            type="button"
+                            onClick={() => {
+                              navigator.clipboard.writeText(qText);
+                              setCopiedQIdx(idx);
+                              setTimeout(() => setCopiedQIdx(null), 1800);
+                            }}
+                            className="p-1 rounded text-muted-foreground hover:text-foreground transition-colors"
+                            title="Copy question"
+                          >
+                            {isCopied ? (
+                              <CheckCheck size={14} className="text-emerald-400" />
+                            ) : (
+                              <Copy size={14} />
+                            )}
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                    <p className="text-sm text-foreground leading-snug">{q}</p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
               <button
                 onClick={handleGenerateQuestions}
                 className="btn-secondary text-xs mt-auto w-full justify-center"
               >
-                <RefreshCw size={14} className="mr-1" /> Regenerate
+                <RefreshCw size={14} className="mr-1" /> Regenerate Questions
               </button>
             </div>
           )}
