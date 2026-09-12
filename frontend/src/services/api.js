@@ -128,3 +128,20 @@ export const battleResumes = async (file1, file2, jobDescription) => {
   const { data } = await api.post('/battle', formData, { timeout: 60000 });
   return data;
 };
+
+export const generateCoverLetter = async ({
+  resumeText,
+  jobRole,
+  companyName,
+  jobDescription,
+  tone = "professional",
+}) => {
+  const { data } = await api.post("/cover-letter", {
+    resumeText,
+    jobRole,
+    companyName,
+    jobDescription,
+    tone,
+  });
+  return data;
+};

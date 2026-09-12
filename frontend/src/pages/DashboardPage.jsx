@@ -24,10 +24,12 @@ import {
   Sparkles,
   ArrowRightLeft,
   Download,
+  FileText,
 } from "lucide-react";
 import PageWrapper from "../components/PageWrapper";
 import ErrorBanner from "../components/ErrorBanner";
 import ScoreRing from "../components/ScoreRing";
+import CoverLetterModal from "../components/CoverLetterModal";
 import { useResume } from "../context/ResumeContext";
 import { useAuth } from "../context/AuthContext";
 import { generateInterviewQuestions, rewriteResume } from "../services/api";
@@ -76,6 +78,7 @@ export default function DashboardPage() {
   const [rewriteError, setRewriteError] = useState(null);
   const [changes, setChanges] = useState([]);
   const [showChanges, setShowChanges] = useState(false);
+  const [isCoverLetterOpen, setIsCoverLetterOpen] = useState(false);
 
   if (!analysisResult) {
     return (
@@ -558,6 +561,13 @@ ${rewritten}
                 color: "from-cyan-500 to-teal-500",
               },
               {
+                icon: FileText,
+                label: "AI Cover Letter",
+                desc: "Tailored to role & custom tone",
+                action: () => setIsCoverLetterOpen(true),
+                color: "from-emerald-500 to-teal-500",
+              },
+              {
                 icon: Target,
                 label: "ATS Deep Dive",
                 desc: `${ats_keywords_missing.length} keywords to add`,
@@ -571,30 +581,59 @@ ${rewritten}
                 to: "/history",
                 color: "from-amber-500 to-orange-500",
               },
-            ].map(({ icon: Icon, label, desc, to, color }) => (
-              <Link
-                key={label}
-                to={to}
-                className="flex items-center gap-3 p-3.5 rounded-xl bg-white/3 border border-white/5 
-                           hover:bg-white/6 hover:border-white/10 transition-all group"
-              >
-                <div
-                  className={`w-9 h-9 rounded-lg bg-gradient-to-br ${color} flex items-center justify-center shrink-0 opacity-80 group-hover:opacity-100 transition-opacity`}
+            ].map(({ icon: Icon, label, desc, to, action, color }) => {
+              if (action) {
+                return (
+                  <button
+                    key={label}
+                    onClick={action}
+                    type="button"
+                    className="flex items-center gap-3 p-3.5 rounded-xl bg-white/3 border border-white/5 
+                               hover:bg-white/6 hover:border-white/10 transition-all group text-left w-full"
+                  >
+                    <div
+                      className={`w-9 h-9 rounded-lg bg-gradient-to-br ${color} flex items-center justify-center shrink-0 opacity-80 group-hover:opacity-100 transition-opacity`}
+                    >
+                      <Icon size={16} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-nexus-text">
+                        {label}
+                      </p>
+                      <p className="text-xs text-nexus-muted">{desc}</p>
+                    </div>
+                    <ArrowRight
+                      size={14}
+                      className="ml-auto text-nexus-muted group-hover:text-nexus-cyan transition-colors"
+                    />
+                  </button>
+                );
+              }
+              return (
+                <Link
+                  key={label}
+                  to={to}
+                  className="flex items-center gap-3 p-3.5 rounded-xl bg-white/3 border border-white/5 
+                             hover:bg-white/6 hover:border-white/10 transition-all group"
                 >
-                  <Icon size={16} className="text-white" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-nexus-text">
-                    {label}
-                  </p>
-                  <p className="text-xs text-nexus-muted">{desc}</p>
-                </div>
-                <ArrowRight
-                  size={14}
-                  className="ml-auto text-nexus-muted group-hover:text-nexus-cyan transition-colors"
-                />
-              </Link>
-            ))}
+                  <div
+                    className={`w-9 h-9 rounded-lg bg-gradient-to-br ${color} flex items-center justify-center shrink-0 opacity-80 group-hover:opacity-100 transition-opacity`}
+                  >
+                    <Icon size={16} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-nexus-text">
+                      {label}
+                    </p>
+                    <p className="text-xs text-nexus-muted">{desc}</p>
+                  </div>
+                  <ArrowRight
+                    size={14}
+                    className="ml-auto text-nexus-muted group-hover:text-nexus-cyan transition-colors"
+                  />
+                </Link>
+              );
+            })}
           </div>
         </motion.div>
 
@@ -734,6 +773,12 @@ ${rewritten}
           )}
         </motion.div>
       </motion.div>
+      <CoverLetterModal
+        isOpen={isCoverLetterOpen}
+        onClose={() => setIsCoverLetterOpen(false)}
+        resumeText={analysisResult?.resumeText || ""}
+        jobRole={jobRole}
+      />
     </PageWrapper>
   );
 }
