@@ -53,15 +53,30 @@ export default function UploadPage() {
     "application/pdf",
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
   ];
+
+  const formatFileSize = (bytes) => {
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
+  };
+
   const handleFile = useCallback(
     (f) => {
       if (!f) return;
-      if (!validTypes.includes(f.type)) {
-        setError("Please upload a PDF or DOCX file only.");
+      const isPdf = f.type === "application/pdf" || f.name.toLowerCase().endsWith(".pdf");
+      const isDocx =
+        f.type === "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
+        f.name.toLowerCase().endsWith(".docx");
+
+      if (!isPdf && !isDocx) {
+        setError("Please upload a valid PDF or DOCX file only.");
         return;
       }
-      if (f.size > 5 * 1024 * 1024) {
-        setError("File size must be under 5 MB.");
+      if (f.size > 10 * 1024 * 1024) {
+        setError("File size exceeds 10 MB limit. Please compress or choose a smaller resume file.");
+        return;
+      }
+      if (f.size === 0) {
+        setError("Selected file is empty. Please choose a valid resume document.");
         return;
       }
       clearError();
@@ -191,7 +206,7 @@ export default function UploadPage() {
                       {localFile.name}
                     </p>
                     <p className="text-xs text-nexus-muted mt-1">
-                      {(localFile.size / 1024).toFixed(1)} KB · {localFile.type.includes("pdf") ? "PDF" : "DOCX"} · Ready to analyze
+                      {formatFileSize(localFile.size)} · {localFile.name.toLowerCase().endsWith(".pdf") || localFile.type.includes("pdf") ? "PDF Document" : "Word (DOCX)"} · Ready to analyze
                     </p>
                   </div>
                   <div className="flex items-center gap-3 shrink-0">
