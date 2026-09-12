@@ -58,9 +58,16 @@ Return ONLY a valid JSON object with exactly these keys:
   "overall_score": number 0-100,
   "ats_score": number 0-100,
   "clarity_score": number 0-100,
+  "impact_score": number 0-100,
+  "format_score": number 0-100,
   "strengths": array of 4 strings,
   "weaknesses": array of 4 strings,
   "ats_keywords_missing": array of 6-10 strings,
+  "section_feedback": {
+    "summary": "1 sentence suggestion",
+    "experience": "1 sentence suggestion",
+    "skills": "1 sentence suggestion"
+  },
   "star_bullets": object with 3 original:improved pairs
 }`;
 
@@ -82,10 +89,15 @@ Return ONLY a valid JSON object with exactly these keys:
       result = JSON.parse(jsonMatch ? jsonMatch[0] : raw);
     } catch {
       result = {
-        overall_score: 65, ats_score: 60, clarity_score: 70,
+        overall_score: 65, ats_score: 60, clarity_score: 70, impact_score: 68, format_score: 75,
         strengths: ['Clear work experience', 'Education present', 'Contact info included', 'Skills section exists'],
         weaknesses: ['Missing metrics', 'Weak action verbs', 'Keywords not optimized', 'No summary'],
         ats_keywords_missing: ['agile', 'collaboration', 'leadership', 'data-driven', 'scalable', 'CI/CD'],
+        section_feedback: {
+          summary: 'Add a concise 2-line executive summary tailored to the target role.',
+          experience: 'Quantify impact in bullet points using metrics, percentages, and dollar values.',
+          skills: 'Group technical competencies into distinct categories for better ATS parsing.',
+        },
         star_bullets: {
           'Worked on projects': 'Led team of 5 to deliver 3 projects on time, reducing delivery time by 30%',
           'Helped with tasks': 'Collaborated with stakeholders to streamline workflow, improving efficiency by 25%',
@@ -94,12 +106,18 @@ Return ONLY a valid JSON object with exactly these keys:
       };
     }
 
+    // Default missing scores safely
+    result.impact_score = typeof result.impact_score === 'number' ? result.impact_score : Math.round((result.overall_score || 65) * 0.95);
+    result.format_score = typeof result.format_score === 'number' ? result.format_score : Math.round((result.clarity_score || 70) * 1.05);
+
     await History.create({
       filename: req.file.originalname,
       job_role: jobRole,
       overall_score: result.overall_score,
       ats_score: result.ats_score,
       clarity_score: result.clarity_score,
+      impact_score: result.impact_score,
+      format_score: result.format_score,
       keywords_missing: result.ats_keywords_missing || [],
     });
 
