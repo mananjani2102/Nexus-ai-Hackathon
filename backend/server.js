@@ -31,6 +31,7 @@ const recruiterRoutes = require('./routes/recruiter');
 const mockInterviewRoutes = require('./routes/mockInterview');
 const voiceAssistantRoutes = require('./routes/voiceAssistant');
 const battleRoutes = require('./routes/battle');
+const coverLetterRoutes = require('./routes/coverLetter');
 
 app.use('/api/auth',               authRoutes);
 app.use('/api',                    aiLimiter, analyzeRoutes);
@@ -38,6 +39,7 @@ app.use('/api',                    bulletRoutes);
 app.use('/api',                    interviewRoutes);
 app.use('/api',                    aiLimiter, rewriteRoutes);
 app.use('/api',                    historyRoutes);
+app.use('/api',                    aiLimiter, coverLetterRoutes);
 app.use('/api/recruiter',          recruiterRoutes);
 app.use('/api/mock-interview',     aiLimiter, mockInterviewRoutes);
 app.use('/api/voice-assistant',    voiceAssistantRoutes);
